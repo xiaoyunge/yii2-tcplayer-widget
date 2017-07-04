@@ -32,9 +32,6 @@ class TcPlayWidget extends Widget
     public function init()
     {
         parent::init();
-        if (!isset ($this->clientOptions['source'])) {
-            throw new InvalidConfigException ('The "clientOptions[source]" property must be set.');
-        }
         $this->initOptions();
         $this->registerAssets();
     }
