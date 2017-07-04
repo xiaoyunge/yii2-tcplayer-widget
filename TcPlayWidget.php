@@ -1,6 +1,6 @@
 <?php
 
-namespace xutl\tcplay;
+namespace xutl\tcplayer;
 
 use yii\base\Widget;
 use yii\helpers\Json;

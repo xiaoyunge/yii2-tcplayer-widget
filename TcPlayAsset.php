@@ -1,5 +1,5 @@
 <?php
-namespace xutl\aliplay;
+namespace xutl\tcplayer;
 
 use yii\web\View;
 

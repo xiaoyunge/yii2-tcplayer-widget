@@ -6,22 +6,22 @@
         "yii2",
         "yii2-extension",
         "yii2-tcplay",
-        "tcplay",
+        "tcplayer",
         "html5 video"
     ],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/xutl/yii2-tcplay-widget/issues",
-        "wiki": "https://github.com/xutl/yii2-tcplay-widget/wiki/",
-        "source": "https://github.com/xutl/yii2-tcplay-widget"
+        "issues": "https://github.com/xutl/yii2-tcplayer-widget/issues",
+        "wiki": "https://github.com/xutl/yii2-tcplayer-widget/wiki/",
+        "source": "https://github.com/xutl/yii2-tcplayer-widget"
     },
     "require": {
         "yiisoft/yii2": "~2.0.0"
     },
     "autoload": {
         "psr-4": {
-            "xutl\\tcplay\\": ""
+            "xutl\\tcplayer\\": ""
         }
     }
 }
