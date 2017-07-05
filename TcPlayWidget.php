@@ -57,7 +57,7 @@ class TcPlayWidget extends Widget
     public function registerAssets()
     {
         $view = $this->getView();
-        TcPlayWidget::register($view);
+        TcPlayAsset::register($view);
         echo Html::tag('div', '', $this->options);
         if (!empty($this->clientOptions)) {
             $clientOptions = Json::encode($this->clientOptions);
