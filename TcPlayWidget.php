@@ -6,6 +6,7 @@ use yii\base\Widget;
 use yii\helpers\Json;
 use yii\helpers\Html;
 use yii\base\InvalidConfigException;
+use yii\web\View;
 
 /**
  * Class TcPlayWidget
@@ -25,6 +26,8 @@ class TcPlayWidget extends Widget
      * @var array
      */
     public $clientOptions = [];
+
+    public $isInit = true;
 
     /**
      * Initializes the widget.
@@ -61,7 +64,11 @@ class TcPlayWidget extends Widget
         echo Html::tag('div', '', $this->options);
         if (!empty($this->clientOptions)) {
             $clientOptions = Json::encode($this->clientOptions);
-            $view->registerJs("var {$this->options['id']} = new TcPlayer('{$this->options['id']}',{$clientOptions});");
+            if ($this->isInit) {
+                $view->registerJs("var {$this->options['id']} = new TcPlayer('{$this->options['id']}',{$clientOptions});");
+            } else {
+                $view->registerJs("window.tcPlayerOptions = {$clientOptions};",View::POS_END);
+            }
         }
     }
 }
