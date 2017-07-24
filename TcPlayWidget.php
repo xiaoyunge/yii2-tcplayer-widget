@@ -2,11 +2,11 @@
 
 namespace xutl\tcplayer;
 
+use yii\web\View;
 use yii\base\Widget;
 use yii\helpers\Json;
 use yii\helpers\Html;
-use yii\base\InvalidConfigException;
-use yii\web\View;
+
 
 /**
  * Class TcPlayWidget
@@ -67,7 +67,7 @@ class TcPlayWidget extends Widget
             if ($this->isInit) {
                 $view->registerJs("var {$this->options['id']} = new TcPlayer('{$this->options['id']}',{$clientOptions});");
             } else {
-                $view->registerJs("window.tcPlayerOptions = {$clientOptions};",View::POS_END);
+                $view->registerJs("window.tcPlayerOptions = {$clientOptions};", View::POS_END);
             }
         }
     }
