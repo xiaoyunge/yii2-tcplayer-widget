@@ -1,6 +1,6 @@
 {
     "name": "xutl/yii2-tcplayer-widget",
-    "description": "The yii2-alipay-widget is a Yii 2 wrapper for the [video.js](http://www.videojs.com/). A JavaScript and CSS library that makes it easier to work with and build on HTML5 video. This is also known as an HTML5 Video Player.",
+    "description": "The yii2-tcplayer-widget is a Yii 2 wrapper for the [video.js](http://www.videojs.com/). A JavaScript and CSS library that makes it easier to work with and build on HTML5 video. This is also known as an HTML5 Video Player.",
     "keywords": [
         "yii2-tcplay-widget",
         "yii2",
@@ -17,7 +17,7 @@
         "source": "https://github.com/xutl/yii2-tcplayer-widget"
     },
     "require": {
-        "yiisoft/yii2": "~2.0.0"
+        "yiisoft/yii2": "~2.0.6"
     },
     "autoload": {
         "psr-4": {
